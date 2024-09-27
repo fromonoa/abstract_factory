@@ -1,28 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AbstractFactory
+﻿namespace AbstractFactory
 {
-    internal class NonElectricFactory
+    internal class NonElectricFactory : VehicleFactory
     {
 
-        public NonElectricFactory() { 
-        
-        
-        }
-
-        public void createCar(Car car)
+        public NonElectricFactory()
         {
 
 
         }
 
-        public void createBike(Bike bike)
+        public Car CreateCar()
         {
+            return new SUV();
 
+        }
+
+        public Bike CreateBike()
+        {
+            return new Mountainbike();
 
         }
     }

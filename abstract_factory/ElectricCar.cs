@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AbstractFactory
+﻿namespace AbstractFactory
 {
-    internal class ElectricCar
+    internal class ElectricCar : Car
     {
+        public ElectricCar()
+        {
+        }
+
+        public void Driving()
+        {
+
+            Console.WriteLine("Someone is currently driving an Electric Car.");
+
+        }
     }
 }

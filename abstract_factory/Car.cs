@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AbstractFactory
+﻿namespace AbstractFactory
 {
-    internal class Car
+    internal interface Car
     {
+        void Driving();
     }
 }

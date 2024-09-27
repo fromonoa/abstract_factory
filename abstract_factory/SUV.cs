@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AbstractFactory
+﻿namespace AbstractFactory
 {
-    internal class SUV
+    internal class SUV : Car
     {
+        public SUV()
+        {
+        }
+
+
+        public void Driving()
+        {
+            Console.WriteLine("Someone is currently driving a SUV.");
+        }
     }
 }
